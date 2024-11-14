@@ -45,7 +45,7 @@ import DashboardLayout from './app/dashboard/dashboardLayout';
 import AllTrainees from './app/dashboard/trainees/allTrainee';
 import StudentDashboardLayout from './app/student_dashboard/StudentDashboardLayout';
 import StudentAttendanceLog from './app/student_dashboard/StudentAttendanceLog';
-
+import DocumentUpload from './app/student_dashboard/DocumentUpload'; // Import DocumentUpload
 
 function App() {
   return (
@@ -76,6 +76,7 @@ function App() {
               
         <Route index element={<h1>Student Dashboard Home</h1>} />
           <Route path="attendance" element={<StudentAttendanceLog />} />
+          <Route path="upload_documents" element={<DocumentUpload />} /> {/* Add route for DocumentUpload */}
           <Route path="*" element={<h1>Student Dashboard - Not Found</h1>} />
         </Route>
 
